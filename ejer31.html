@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // Colegio San Jose 6to B // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 31:
+De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un
+programa que lea los datos de entrada e informe
+a) Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle
+un aumento del 20 %, mostrar el sueldo a pagar.
+b) Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un
+aumento de 5 %.
+c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios.
+
+     -->
+    <script>
+      let x = parseInt(prompt('Ingrese el sueldo del operario: '));
+      let y = parseInt(prompt('Ingrese los años de antiguedad del operario: '));
+      let sueldo;
+      if (x < 500 && y >= 10) {
+        sueldo = x * 1.2;
+        document.write(
+          'Tuvo un aumento del 20% en su sueldo. Ahora cobra $',
+          sueldo
+        );
+      } else if (x < 500 && y < 10) {
+        sueldo = x * 1.05;
+        document.write(
+          'Tuvo un aumento del 5% en su sueldo. Ahora cobra $',
+          sueldo
+        );
+      } else {
+        document.write('Su sueldo sigue sinedo de $', x);
+      }
+    </script>
+  </body>
+</html>

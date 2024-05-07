@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // Colegio San Jose 6to B // nicolassommer@colegiodesanjose.edu.ar
+       Ejercicio 33:
+Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) luego mostrar la
+palabra traducida en inglés. Es decir, si se ingresa 'casa' debemos mostrar el texto
+'house' en la página..
+-->
+    <script>
+      let palabra = prompt(
+        'Ingrese una de las palabras casa, mesa, perro o gato: '
+      ).toLowerCase();
+      if (palabra == 'casa') {
+        document.write('House');
+      } else if (palabra == 'mesa') {
+        document.write('Table');
+      } else if (palabra == 'perro') {
+        document.write('Dog');
+      } else if (palabra == 'gato') {
+        document.write('Cat');
+      } else {
+        document.write('La palabra ingresada no coincidio con las pedidas');
+      }
+    </script>
+  </body>
+</html>

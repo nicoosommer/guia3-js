@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // Colegio San Jose 6to B // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 30:
+Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir
+dos valores enteros x e y. Posteriormente imprimir en pantalla en qué cuadrante se ubica dicho punto. (1º
+Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)
+
+     -->
+    <script>
+      let x = parseInt(prompt('Ingrese el valor x de la coordenada: '));
+      let y = parseInt(prompt('Ingrese el valor y de la coordenada: '));
+      if (x > 0 && y > 0) {
+        document.write('El punto se ubica en el cuadrante 1');
+      } else if (x < 0 && y > 0) {
+        document.write('El punto se encuentra en el cuadrante 2');
+      } else if (x < 0 && y < 0) {
+        document.write('El punto se encuentra en el cuadrante 3');
+      } else {
+        document.write('El punto se ecnuentra en el cuadrante 4');
+      }
+    </script>
+  </body>
+</html>
